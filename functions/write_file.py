@@ -31,19 +31,11 @@ schema_write_file = types.FunctionDeclaration(
         properties={
             "file_path": types.Schema(
                 type=types.Type.STRING,
-<<<<<<< HEAD
                 description="File path of the name of the file to write to, relative to the working directory (default is the working directory itself)",
             ),
             "content": types.Schema(
                 type=types.Type.STRING,
-                description="Content that is to be written to the file",
-=======
-                description="Path to the file to write, relative to the working directory",
-            ),
-            "content": types.Schema(
-                type=types.Type.STRING,
                 description="Text content to write to the file",
->>>>>>> e100a72 (add all declarations, ammend get_file_content name)
             ),
         },
         required=["file_path", "content"],
